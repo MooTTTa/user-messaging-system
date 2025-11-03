@@ -59,10 +59,15 @@ public class Customer {
         this.isValidCpf = false;
     }
 
-    public Customer(String name, String cpf) {
-        this.name = name;
-        this.cpf = cpf;
-        this.address = null;
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", cpf='" + cpf + '\'' +
+                ", address=" + address +
+                ", isValidCpf=" + isValidCpf +
+                '}';
     }
 
 

@@ -29,6 +29,6 @@ public class InsertCustomerUseCaseImpl implements InsertCustomerUseCase {
         custumer.setAddress(address);
         insertCustumer.insert(custumer);
         sendCpfForValidation.send(custumer.getCpf());
-        System.out.println(custumer);
+        System.out.println("Customer salvo: " + custumer);
     }
 }
